@@ -1,33 +1,20 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-import { ReactComponent as Logo } from "../../assets/images/SFS-LOGOS-4-150x150.svg";
-import { NavLink, useLocation } from "react-router-dom";
+
 import "./styles.scss";
 
 const AuthLayout = ({ children }) => {
-  const location = useLocation();
 
-  useEffect(() => {}, [location.pathname]);
 
   return (
     <div className="auth-layout">
       <header className="header">
-        <div className="logo">
-          <NavLink to="/">
-            <Logo />
-          </NavLink>
-        </div>
+       
 
         <div className="header__lead">
-          {location.pathname === "/login" && <span>Welcome to:</span>}
+       
 
-          {location.pathname === "/signup" && <span>Get started with</span>}
-
-          {location.pathname === "/account-success" && (
-            <span>You are almost there with</span>
-          )}
-
-          <h1>SFS Capital</h1>
+          <h1>Image Half</h1>
         </div>
       </header>
 
