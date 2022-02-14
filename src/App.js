@@ -3,7 +3,8 @@ import AppRoute from "./hoc/appRoute";
 // import { useSelector } from "react-redux";
 
 // layouts
-import LandingLayout from "./layouts/landing";
+// import LandingLayout from "./layouts/landing";
+import DashboardLayout from "./layouts/dashboard";
 import AuthLayout from "./layouts/auth";
 
 // pages
@@ -14,7 +15,7 @@ function App() {
   return (
     <>
       <Switch>
-        <AppRoute exact path='/' component={HomePage} layout={LandingLayout} />
+        <AppRoute exact path='/' component={HomePage} layout={DashboardLayout} />
 
         <AppRoute path='/login' component={LoginPage} layout={AuthLayout} />
 
